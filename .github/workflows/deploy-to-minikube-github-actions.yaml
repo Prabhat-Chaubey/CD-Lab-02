@@ -1,0 +1,11 @@
+# .github/workflows/test-workflow.yml
+name: Test GitHub Actions
+
+on: [push]
+
+jobs:
+  check-run:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Print Hello
+        run: echo "Hello from GitHub Actions!"
